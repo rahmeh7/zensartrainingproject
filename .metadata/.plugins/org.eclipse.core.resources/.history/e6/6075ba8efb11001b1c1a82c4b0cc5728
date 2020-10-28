@@ -1,0 +1,47 @@
+package com.zensar.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Register {
+	@Id
+	private String userName;
+	private String EmailAddress;
+	private String Password;
+	private String PhoneNumber;
+	private Integer EnterYourAge;
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getEmailAddress() {
+		return EmailAddress;
+	}
+	public void setEmailAddress(String emailAddress) {
+		EmailAddress = emailAddress;
+	}
+	public String getPassword() {
+		return Password;
+	}
+	public void setPassword(String password) {
+		Password = password;
+	}
+	public String getPhoneNumber() {
+		return PhoneNumber;
+	}
+	public void setPhoneNumber(String phoneNumber) {
+		PhoneNumber = phoneNumber;
+	}
+	public Integer getEnterYourAge() {
+		return EnterYourAge;
+	}
+	public void setEnterYourAge(Integer enterYourAge) {
+		EnterYourAge = enterYourAge;
+	}
+	
+	
+
+}
